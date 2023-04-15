@@ -1,0 +1,97 @@
+body {
+    background-color: #fffaec;
+}
+
+/* Color Switcher */
+#switcher {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#switcher li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 15px 0;
+    border-radius: 30px;
+    border: 3px solid black;
+}
+
+#pinkButton {
+    background: #e11a6e;
+}
+
+#blueButton {
+    background: #04b1f2;
+}
+
+#yellowButton {
+    background: #fdd45f;
+}
+
+/* Img Position */
+#parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#imgChange {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#setLogo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/* Upload Button */
+.custom-file-input input[type="file"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-file-input label {
+    display: inline-block;
+    background-color: #fdd45f;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
+.custom-file-input .file-name {
+    margin: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.upload-icon img {
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+/* Rotate Logo */
+
+.rotate {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

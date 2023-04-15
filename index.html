@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/umbrella.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <img
+        id="umbrellaImg"
+        src="/img/Yello_umbrella.png"
+        alt="umbrella image"
+        width="350"
+      />
+
+      <img id="setLogo" width="100" src="#" alt="" />
+    </div>
+
+    <ul id="switcher">
+      <li
+        id="yellowButton"
+        onclick="switchImgWithColor('#fffaec', '#fdd45f', 'Yello_umbrella.png')"
+      ></li>
+      <li
+        id="blueButton"
+        onclick="switchImgWithColor('#e4f5fd', '#04b1f2', 'Blue_umbrella.png')"
+      ></li>
+      <li
+        id="pinkButton"
+        onclick="switchImgWithColor('#f5c1d1', '#e11a6e', 'Pink_umbrella.png')"
+      ></li>
+    </ul>
+
+    <div class="custom-file-input">
+      <input
+        type="file"
+        id="file-upload"
+        name="file-upload"
+        accept=".jpg,.jpeg,.png"
+        onchange="preview_image(event)"
+      />
+      <label for="file-upload">
+        <span class="upload-icon"
+          ><img src="/img/upload_icon.svg" alt="Upload Icon" width="15"
+        /></span>
+        <span class="file-name">UPLOAD LOGO</span>
+      </label>
+    </div>
+
+    <script src="/js/umbrella.js"></script>
+  </body>
+</html>
